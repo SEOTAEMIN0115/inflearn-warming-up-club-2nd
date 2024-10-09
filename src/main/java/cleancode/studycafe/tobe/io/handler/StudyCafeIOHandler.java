@@ -22,10 +22,6 @@ public class StudyCafeIOHandler {
         outputHandler.showAnnouncement();
     }
 
-    public void showPassOrderSummary(StudyCafeSeatPass selectedPass) {
-        outputHandler.showPassOrderSummary(selectedPass);
-    }
-
     public void showPassOrderSummary(StudyCafePassOrder passOrder) {
         outputHandler.showPassOrderSummary(passOrder);
     }
