@@ -4,6 +4,7 @@ import cleancode.studycafe.tobe.model.StudyCafeLockerPass;
 import cleancode.studycafe.tobe.model.StudyCafePass;
 
 import java.util.List;
+import java.util.Optional;
 
 public class ConsoleOutputHandler {
 
@@ -41,7 +42,9 @@ public class ConsoleOutputHandler {
         System.out.println(askMessage);
         System.out.println("1. 예 | 2. 아니오");
     }
-
+    public void showPassOrderSummary(StudyCafePass selectedPass) {
+        showPassOrderSummary(selectedPass, null);
+    }
     public void showPassOrderSummary(StudyCafePass selectedPass, StudyCafeLockerPass lockerPass) {
         System.out.println();
         System.out.println("이용 내역");
